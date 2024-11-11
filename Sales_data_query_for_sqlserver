@@ -1,0 +1,49 @@
+select * from [dbo].[LITA Capstone Dataset_-27027859]
+---To retrieve  the total sales for each product category---
+select product, sum(sales) as total_sales_for_each_category
+from [dbo].[LITA Capstone Dataset_-27027859]
+group by product 
+
+---to find the number of sales tranctions in each region---
+select region, count(customer_id) as sales_tranc_in_each_region
+from [dbo].[LITA Capstone Dataset_-27027859]
+group by region
+
+---to find the highest selling product by total sales value----
+select top 1 product, sum(sales) as highest_selling_product
+from [dbo].[LITA Capstone Dataset_-27027859]
+group by product
+order by highest_selling_product desc
+
+---calculate the total reveune per product---
+select product ,sum(sales) as total_reveune 
+from [dbo].[LITA Capstone Dataset_-27027859] 
+group by product 
+
+---calculate monthly sales totals for the current year---
+select MONTH(OrderDate) AS Month, 
+sum (sales) as Total_sales
+from [dbo].[LITA Capstone Dataset_-27027859]
+where year (orderdate) = '2024'
+GROUP BY MONTH(ORDERDATE)
+ORDER BY MONTH(ORDERDATE)
+
+---find the top 5 customers by total purchase amount 
+select top 5 customer_id, sum(quantity) as Top_5_total_purchase
+from [dbo].[LITA Capstone Dataset_-27027859]
+group by customer_id
+order by top_5_total_purchase
+
+---caculate the percentge of total sales contributed by each region---
+select region,
+sum(sales) as Total_sales,
+(sum(sales) * 100.0 / (select sum(sales) From [dbo].[LITA Capstone Dataset_-27027859])) as Percentage_of_total_sales 
+From [dbo].[LITA Capstone Dataset_-27027859]
+group by region
+
+---identify products with no sales in the last quater---
+Select Distinct Product
+from [dbo].[LITA Capstone Dataset_-27027859] 
+where product not in ( select Product from [dbo].[LITA Capstone Dataset_-27027859]
+where OrderDate>= Getdate() - 90
+
