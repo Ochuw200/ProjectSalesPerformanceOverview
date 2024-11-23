@@ -3,19 +3,24 @@
 This is my final project documentation while learning data analysis from LITA. This repository contains data and queries for analyzing sales performance for a retail store and customer subscription trends. It covers various codes such as total sales, customer acquisition, subscription trends, and regional revenues.
 
 ## Contents
-- **Data**: Datasets containing sales data and subscription data.
+- **Data**: Datasets containing sales data and customer subscription data.
 - **Queries**: Excel,powerbi and SQL programs were used for data cleaning, transformation, and analysis.
-- **Data Analysis programs used**: Excel,Structured Query Language, Power Business intelligence.
+- **Data Analysis programs used**
+- **Prerequisites**
+- **Projects**: Project 1 (Retail store sale data), Project 2 (Customer Segmentation for a Subscription Service data) 
 - **Reports**: Summary reports.
 
 ## Getting Started
 
-### Prerequisites
-- SQL
-- Power BI
-- Excel
+### Data Analysis Program Used 
+- SQL: Structured Query Language 
+- Power BI: Power Business Intelligence 
+- Microsoft Excel
+
+  ### Prerequisites 
 - A compartable computer/laptop
 - Browser
+
 ### Projects 
 This repository contains two data analysis projects focused on sales data and customer segmentation for a subscription service. Each project involves data exploration, SQL analysis, and Power BI dashboard creation.
 
@@ -72,6 +77,9 @@ Find the total number of active and canceled subscriptions.
 3. Power BI
 Dashboard Creation: Build a Power BI dashboard that visualizes key customer segments, cancellations, and subscription trends.
 Include slicers for interactive analysis of customer data.
+
+### Reports 
+This project analyzes retail sales data to uncover insights on top-selling products, regional performance, and monthly trends. Using Excel for data exploration, SQL for querying key metrics, and Power BI for visualization, it delivers an interactive dashboard showcasing sales overviews, product performance, and regional contributions.
 
 ### Installation
 Clone the repository and install the dependencies:
