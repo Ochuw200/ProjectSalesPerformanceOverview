@@ -1,6 +1,6 @@
 # Sales Data and Subscription Trends Analysis
 
-his is my final project documentation while learning data analysis from LITA. This repository contains data and queries for analyzing sales performance for a retail store and customer subscription trends. It covers various codes such as total sales, customer acquisition, subscription trends, and regional revenues.
+This is my final project documentation while learning data analysis from LITA. This repository contains data and queries for analyzing sales performance for a retail store and customer subscription trends. It covers various codes such as total sales, customer acquisition, subscription trends, and regional revenues.
 
 ## Contents
 - **Data**: Datasets containing sales data and subscription data.
